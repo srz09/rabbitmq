@@ -1,0 +1,35 @@
+{
+  "name": "@srz09/rabbitmq",
+  "version": "0.0.2",
+  "description": "An amqplib wrapper for nodejs",
+  "main": "dist/index.js",
+  "types": "dist/index",
+  "scripts": {
+    "build": "rimraf commonjs && tsc -p tsconfig.build.json",
+    "lint": "tslint -p tsconfig.json -c tslint.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reptilbud/rabbitmq.git"
+  },
+  "keywords": [
+    "amqp",
+    "nodesjs"
+  ],
+  "author": "Sebastien Ritz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/reptilbud/rabbitmq/issues"
+  },
+  "homepage": "https://github.com/reptilbud/rabbitmq#readme",
+  "peerDependencies": {
+    "amqplib": "~0.7.1"
+  },
+  "devDependencies": {
+    "@types/amqplib": "~0.5.17",
+    "amqplib": "~0.7.1",
+    "rimraf": "~2.6.2",
+    "tslint": "~5.16.0",
+    "typescript": "~4.2.4"
+  }
+}
